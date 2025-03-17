@@ -1,2 +1,32 @@
-h1 {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    outline: 1px solid red;
+    width: 90vmin;
+    max-width: 600px;
+    max-height: 600px;
+    aspect-ratio: 1/1;
+}
+
+.grid-box {
+    flex: 1 1 25%;
+    outline: 1px solid blue;
+    width: 0;
+    min-height: 0;
 }
